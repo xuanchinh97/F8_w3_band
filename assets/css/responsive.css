@@ -3,6 +3,7 @@
 {
 
 }
+
 /* Tablet */
 @media (min-width:46.25em ) and (max-width:63.9375em)
 {
@@ -11,23 +12,28 @@
 display: block;
   }
 
+
 }
+
 /* Mobile  */
 @media (max-width:46.1875em)
 {
   #header
   {
   overflow: hidden;
-
+  z-index: 13;
   }
+
   #nav 
   {
     display: block;
-  }    
+  }
+
   #nav .subnav
   {
     position: inherit;
   }
+
   #nav .subnav a
   {
     background-color: #333;
@@ -36,46 +42,58 @@ display: block;
     border-style: none;
 
   }
+
   #nav li a 
   {
     padding: 1px 24px;
   }
+
 #nav li {
     display: block;
 }
+
 #nav > li:first-child
 {
   display: inline-block;
 }
+
 #header .search-btn 
 {
     display: none;
 }
+
 #header .menu-btn{
 display: block;
 
 }
 
+
 #content .members-img
 {
   width: 80%;
 }
+
 .member-items
 {
   width: 100%;
 padding: 10px 10px;
 }
+
 #content .contact-form
 {
       padding-top: 32px;
 }
+
 #content .contact-info 
 {
   display: contents;
   line-height: 1.7;
   padding: 5px 5px;
 }
+
 .s-full-width
 {
   width: 100%;
+}
+
 }

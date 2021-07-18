@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/img/logo.jpg" type="image/x-icon" />
-    <title>Band</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="keywords" content="chinhdz97">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
+    <title>Single</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
@@ -21,7 +25,7 @@
 <body>
     <!-- tạo nhanh các div ul li 
     ul#nav>li*5>a -->
-    <div class="" id="main">
+    <class class="" id="main">
 
         <div id="header">
             <ul id="nav">
@@ -59,18 +63,20 @@
             <!-- about section  -->
             <div id="band" class="content-section">
                 <h2 class="section-heading">
-                 INTRODUCTION
+                    INTRODUCTION
                 </h2>
                 <p class="section-sub-heading">
                     I love music
                 </p>
                 <p class="about-text">
-                    Hello, I’m Xuan Chinh and I’m in the early 20s.I was born and grew up in Ninh Binh. I’m a sophomore at the university of HUBT. My major is Music.
-                    I am starting to learn HTML and CSS in F8, learning is not always easy. Sometimes it's difficult to overcome, thank you Mr. Son for the easy-to-understand lectures.
+                    Hello, I’m Xuan Chinh and I’m in the early 20s.I was born and grew up in Ninh Binh. I’m a sophomore
+                    at the university of HUBT. My major is Music.
+                    I am starting to learn HTML and CSS in F8, learning is not always easy. Sometimes it's difficult to
+                    overcome, thank you Mr. Son for the easy-to-understand lectures.
                     As you can see this is the product after my efforts. Wished everyone success
                 </p>
                 <div class="row members-list">
-                        <div class="col col-third member-items text-center">
+                    <div class="col col-third member-items text-center">
                         <p class="members-name">Chinh </p>
                         <img src="./assets/img/num1.jpg" alt="number1" class="members-img">
                     </div>
@@ -117,7 +123,7 @@
                                 <p class="place-desc">
                                     I hope you want to visitted my show.
                                 </p>
-                                <a href="#" class="btn">Buy Ticket</a>
+                                <button href="#" class="btn js-buy-ticket"><span>Buy Ticket</span> </button>
                             </div>
                         </div>
                         <div class="col col-third member-items">
@@ -130,7 +136,7 @@
                                 <p class="place-desc">
                                     I hope you want to visitted my show.
                                 </p>
-                                <a href="#" class="btn">Buy Ticket</a>
+                                <button href="#" class="btn js-buy-ticket"><span>Buy Ticket</span> </button>
                             </div>
                         </div>
                         <div class="col col-third member-items">
@@ -143,7 +149,7 @@
                                 <p class="place-desc">
                                     I hope you want to visitted my show.
                                 </p>
-                                <a href="#" class="btn">Buy Ticket</a>
+                                <button href="#" class="btn js-buy-ticket"><span>Buy Ticket</span> </button>
                             </div>
                         </div>
 
@@ -166,7 +172,8 @@
                     <div class="col col-half contact-info">
                         <p><i class="ti-location-pin"></i>Ninh Binh, VN</p>
                         <p><i class="ti-mobile"></i>Phone: <a href="tel:0968528230">+84968528230</a> </p>
-                        <p><i class="ti-email"></i> Email: <a href="mailto:kqtchcheng97@gmail.com">trinhxuanchinh97@gmail.com</a> </p>
+                        <p><i class="ti-email"></i> Email: <a
+                                href="mailto:kqtchcheng97@gmail.com">trinhxuanchinh97@gmail.com</a> </p>
                     </div>
                     <div class="s-full-width col col-half contact-form">
                         <form action="#" method="GET">
@@ -185,7 +192,7 @@
                                         class="form-info">
                                 </div>
                             </div>
-                            <input class="s-full-width btn pull-right mt-16" type="submit" value="Send">
+                            <input class="s-full-width btn btn-send pull-right mt-16" type="submit" value="Send">
                         </form>
                     </div>
                 </div>
@@ -209,7 +216,42 @@
             <p class="coppyright">Powered by <a href="https://trinhxuanchinh.wordpress.com/">XuanChinh</a></p>
         </div>
 
+    </class>
+
+    <!-- show buy button  -->
+    <div class="modal js-modal">
+        <div class="modal-cantainer js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="qualy" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $10 per person
+                </label>
+                <input class="modal-input" type="text" name="ticket-number" id="qualy" placeholder="How many?">
+
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input class="modal-input" type="email" name="email" id="email" placeholder="Enter email...">
+
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-footer__help">Need <a href="http://" target="_blank" rel="noopener noreferrer">help?</a>
+                </p>
+            </div>
+        </div>
     </div>
+
 
     <script>
         var header = document.getElementById('header');
@@ -227,7 +269,7 @@
                 header.style.height = null;
             }
         }
-        // tự động đóng khi chọn mẹn
+        // tự động đóng khi chọn menu
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         console.log(menuItems);
         for (var i = 0; i < menuItems.length; i++) {
@@ -243,6 +285,27 @@
             }
         }
 
+    </script>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+        function showBuyTicket() {
+            modal.classList.add('modal-open')
+        }
+        function hideBuyTicket() {
+            modal.classList.remove('modal-open')
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTicket)
+        }
+        modalClose.addEventListener('click', hideBuyTicket)
+        modal.addEventListener('click', hideBuyTicket)
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
     </script>
 </body>
 
