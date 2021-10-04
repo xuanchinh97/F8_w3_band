@@ -10,23 +10,15 @@
     <meta name="description" content="">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
-    <title>Single</title>
+    <title>Xuan Chinh 97</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
-<!-- 
-    ctrl + D;
-    shift alt + -> ;
-    ctrl + shift + alt + mũi tên xuống 
-    
- -->
 
 <body>
-    <!-- tạo nhanh các div ul li 
-    ul#nav>li*5>a -->
-    <class class="" id="main">
 
+    <class class="" id="main">
         <div id="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
@@ -35,9 +27,9 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#">More <i class="nav-arrow-down ti-angle-down"></i> </a>
                     <ul class="subnav">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extrast</a></li>
-                        <li><a href="#">Media</a></li>
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
                     </ul>
                 </li>
             </ul>
@@ -69,11 +61,9 @@
                     I love music
                 </p>
                 <p class="about-text">
-                    Hello, I’m Xuan Chinh and I’m in the early 20s.I was born and grew up in Ninh Binh. I’m a sophomore
-                    at the university of HUBT. My major is Music.
-                    I am starting to learn HTML and CSS in F8, learning is not always easy. Sometimes it's difficult to
-                    overcome, thank you Mr. Son for the easy-to-understand lectures.
-                    As you can see this is the product after my efforts. Wished everyone success
+                    Hello, I’m Xuan Chinh and I’m in the early 20s.I was born and grew up in Ninh Binh. I’m a third-year
+                    student
+                    at the university of HUBT. My major is Software Engineering.
                 </p>
                 <div class="row members-list">
                     <div class="col col-third member-items text-center">
@@ -171,9 +161,8 @@
                 <div class="row contact-content">
                     <div class="col col-half contact-info">
                         <p><i class="ti-location-pin"></i>Ninh Binh, VN</p>
-                        <p><i class="ti-mobile"></i>Phone: <a href="tel:0968528230">+84968528230</a> </p>
-                        <p><i class="ti-email"></i> Email: <a
-                                href="mailto:kqtchcheng97@gmail.com">trinhxuanchinh97@gmail.com</a> </p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:0968523230">+84968528230</a> </p>
+                        <p><i class="ti-email"></i> Email: <a href="mailto:chinh97@gmail.com">chinh97@gmail.com</a> </p>
                     </div>
                     <div class="s-full-width col col-half contact-form">
                         <form action="#" method="GET">
@@ -251,62 +240,11 @@
             </div>
         </div>
     </div>
+    <!-- Back to top button -->
+    <button id="myBtn" title="Go to top"> Top </button>
+    
+    <script src="./assets/js/main.js"></script>
 
-
-    <script>
-        var header = document.getElementById('header');
-        console.log(header)
-        var menu = document.getElementById('mobile-menu');
-        console.log(menu)
-        var headerHight = header.clientHeight;
-
-        //đóng mỏ mobile menu
-        menu.onclick = function () {
-            var isClose = header.clientHeight === headerHight;
-            if (isClose) {
-                header.style.height = "auto";
-            } else {
-                header.style.height = null;
-            }
-        }
-        // tự động đóng khi chọn menu
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        console.log(menuItems);
-        for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i];
-            menuItem.onclick = function (events) {
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-                if (isParentMenu) {
-                    events.preventDefault();
-                } else {
-                    header.style.height = null;
-
-                }
-            }
-        }
-
-    </script>
-
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-        function showBuyTicket() {
-            modal.classList.add('modal-open')
-        }
-        function hideBuyTicket() {
-            modal.classList.remove('modal-open')
-        }
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTicket)
-        }
-        modalClose.addEventListener('click', hideBuyTicket)
-        modal.addEventListener('click', hideBuyTicket)
-        modalContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-    </script>
 </body>
 
 </html>

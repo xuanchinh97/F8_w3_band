@@ -10,15 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 1. vị trí
-2.kích thước
-3. màu sắc
-4. kiểu dáng */
-/* 
- 1. Từ ngoài vào trong
- 2. Từ trên xuống dưới
- 3. Từ Tổng quan đến chi tiết
-   */
 .btn {
   margin-top: 15px;
   background-color: #000;
@@ -633,4 +624,26 @@ min-width: 1025px (từ size này trở lên là danh cho desktop thông thườ
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* định dạng cho button */
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color:white;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+#myBtn:hover {
+  opacity: 1;
 }
